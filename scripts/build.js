@@ -31,6 +31,7 @@ import prettyBytes from 'pretty-bytes'
 
 const require = createRequire(import.meta.url)
 const args = minimist(process.argv.slice(2))
+// 获取调用参数（打包模块）
 const targets = args._
 const formats = args.formats || args.f
 const devOnly = args.devOnly || args.d
